@@ -15,7 +15,6 @@ import Signup from './components/Signup.jsx'
 import  ProtectedRoute  from './ProtectedRoutes/ProtectedRoutes.jsx'
 import Contact from './components/contact/Contact.jsx'
 import About from './components/about/About.jsx'
-import Team from './components/team/Team.jsx'
 import Pricing from './components/pricing/Pricing.jsx'
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,7 +28,7 @@ const router = createBrowserRouter(
       <Route path="about" element={<ProtectedRoute><About /></ProtectedRoute>} />
       <Route path="pricing" element={<ProtectedRoute><Pricing /></ProtectedRoute>} />
       <Route path="/login"  element={<Login />} />
-      <Route path="signup" element={<Signup />} />
+      <Route path="/signup" element={<Signup />} />
     </Route>
   )
 );

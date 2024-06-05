@@ -3,6 +3,7 @@ import Back from "../common/back/Back"
 import PriceCard from "./PriceCard"
 import "./price.css"
 import Faq from "./Faq"
+import Footer from "../common/footer/Footer"
 
 const Pricing = () => {
   return (
@@ -14,6 +15,7 @@ const Pricing = () => {
         </div>
       </section>
       <Faq />
+      <Footer/>
     </>
   )
 }

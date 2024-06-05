@@ -2,7 +2,10 @@ import React, { useState } from 'react';
 import './login.css'; // Import custom CSS file
 import { auth } from '../Firebase/FirebaseConfig';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
+import Signup from './Signup';
+import { Link } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom'; // Import NavLink
+
 
 const LoginForm = () => {
   const [email, setemail] = useState('');
@@ -55,7 +58,13 @@ const LoginForm = () => {
           <input type="password" id="password" value={password} onChange={handlePasswordChange} />
         </div>
         <button type="submit" onClick={login}>Login</button>
+        <p>Don't have an account? </p>
+        <p>
+        <Link to="/signup">Signup</Link>
+      </p>
       </form>
+
+      
     </div>
   );
 };

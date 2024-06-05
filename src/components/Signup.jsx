@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../Firebase/FirebaseConfig';
+import { Link } from 'react-router-dom';
 
 const Signup = () => {
     // State declarations
@@ -50,7 +51,10 @@ const Signup = () => {
                     <input type="password" id="password" value={password} onChange={handlePasswordChange} />
                 </div>
                 
-                <button type="submit" onClick={signup}>Login</button>
+                <button type="submit" onClick={signup}>Signup</button>
+                <p>
+        <Link to="/login">Login</Link>
+      </p>
             </form>
         </div>
     );
