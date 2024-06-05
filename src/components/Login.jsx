@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
-import './login.css'; // Import custom CSS file
+import './login.css'; 
 import { auth } from '../Firebase/FirebaseConfig';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import Signup from './Signup';
 import { Link } from 'react-router-dom';
-import {  useNavigate } from 'react-router-dom'; // Import NavLink
-
+import {  useNavigate } from 'react-router-dom'; 
 
 const LoginForm = () => {
   const [email, setemail] = useState('');

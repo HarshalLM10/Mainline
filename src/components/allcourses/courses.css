@@ -115,3 +115,29 @@
 /*-------------online---------*/
 @media screen and (max-width: 768px) {
 }
+
+
+.video-section {
+  padding: 40px 0;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.video-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.video-box h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+

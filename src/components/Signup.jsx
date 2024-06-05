@@ -9,7 +9,7 @@ const Signup = () => {
     const [password, setPassword] = useState('');
 
     const signup = async () => {
-        if(email === "" || password === ""){
+        if (email === "" || password === "") {
             return alert("Please fill all fields")
         }
         try {
@@ -50,11 +50,11 @@ const Signup = () => {
                     <label htmlFor="password">Password</label>
                     <input type="password" id="password" value={password} onChange={handlePasswordChange} />
                 </div>
-                
+
                 <button type="submit" onClick={signup}>Signup</button>
                 <p>
-        <Link to="/login">Login</Link>
-      </p>
+                    <Link to="/login">Login</Link>
+                </p>
             </form>
         </div>
     );
